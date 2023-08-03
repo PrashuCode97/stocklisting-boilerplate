@@ -4,7 +4,8 @@ Tasks to be performed:
 symbol, name, currency, exchange, mic_code, country, type as private strings
 
 2. Create a service layer with below mentioned methods in service/StockListingService.java
-    2a. Get stock by country name: 
+
+   2a. Get stock by country name: 
     - Create a method `getStocksByCountry` 
     - Taking country name as parameter
     - Use RestTemplate to make third party api call: `https://api.twelvedata.com/stocks?country=" + country`
@@ -27,6 +28,7 @@ symbol, name, currency, exchange, mic_code, country, type as private strings
     - Return data in form of model/Stock.java
 
 3. Create a controller layer with below mentioned menthods in controller/StockController.java
+   
     3a. Get stocks by country name: 
     - Create a GET request `@GetMapping("/stocks/{country}")` 
     - Receive stock by receiving {country} name as PathVariable
